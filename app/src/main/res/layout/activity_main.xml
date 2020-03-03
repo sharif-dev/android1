@@ -10,7 +10,8 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button2" />
+        android:text="@string/button2"
+        tools:ignore="MissingConstraints" />
 
 
     <EditText
@@ -22,7 +23,8 @@
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:layout_editor_absoluteX="88dp"
-        android:imeOptions="actionGo"/>
+        android:imeOptions="actionGo"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button3"
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:text="@string/button3"
         tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText2"
@@ -41,7 +44,8 @@
         android:inputType="phone"
         app:layout_constraintTop_toBottomOf="@+id/editText"
         tools:layout_editor_absoluteX="0dp"
-        android:imeOptions="actionDone"/>
+        android:imeOptions="actionDone"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editText3"
@@ -62,13 +66,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editText3"
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="LabelFor" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="384dp"
-        tools:layout_editor_absoluteY="415dp"
-        tools:ignore="MissingConstraints" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -132,9 +129,6 @@
         app:layout_constraintEnd_toStartOf="@+id/toggleButton1"
         tools:layout_editor_absoluteY="494dp"
         tools:ignore="MissingConstraints" />
-
-
-
 
 
 
