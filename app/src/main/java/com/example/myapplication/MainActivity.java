@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,6 +58,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
+        String[] countries = getResources().getStringArray(R.array.countries_array);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, countries);
+        textView.setAdapter(adapter);
+
+        RadioButton radioButton = (RadioButton) findViewById(R.id.radioButton);
+        radioButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+        RadioButton radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
+        radioButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+        RadioButton radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
+        radioButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
 
 

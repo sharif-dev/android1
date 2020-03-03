@@ -6,4 +6,14 @@
     <string name="text3">text</string>
     <string name="phone2">phone</string>
     <string name="email">email</string>
+    <string name="RadioButton">vertical</string>
+    <string name="radiobutton2">pirates</string>
+    <string name="radiobutton3">ninjas</string>
+    <string-array name="countries_array">
+        <item>iran</item>
+        <item>japan</item>
+        <item>iraq</item>
+        <item>qatar</item>
+        <item>chine</item>
+    </string-array>
 </resources>

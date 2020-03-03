@@ -46,7 +46,7 @@
     <EditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:ems="10"
         android:inputType="text"
         android:hint="@string/text3"
@@ -55,14 +55,53 @@
         android:autofillHints="hello"
         android:imeOptions="actionSend"/>
 
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="LabelFor" />
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="384dp"
+        tools:layout_editor_absoluteY="415dp"
+        tools:ignore="MissingConstraints" />
 
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RadioButton"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="441dp"
+        tools:ignore="MissingConstraints" />
 
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radiobutton2"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="441dp"
+        tools:ignore="MissingConstraints" />
 
-
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radiobutton3"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="441dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 
 <!-- <?xml version="1.0" encoding="utf-8"?>
