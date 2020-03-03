@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.actions"
-            android:resource="@xml/button_custom" />
+            android:resource="@xml/custom_button" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
