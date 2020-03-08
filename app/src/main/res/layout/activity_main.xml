@@ -13,10 +13,13 @@
         android:text="@string/button2"
         tools:ignore="MissingConstraints" />
 
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"</Button>-->
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="580dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText"
