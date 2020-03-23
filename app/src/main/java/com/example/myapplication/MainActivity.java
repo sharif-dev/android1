@@ -5,8 +5,10 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,6 +28,8 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                setContentView(R.layout.activity_main2);
             }
         });
         Button button3 = (Button) findViewById(R.id.button3);
@@ -69,7 +73,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
+        /*Button button = (Button) findViewById(R.id.buttonM2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_main);
+            }
+        });*/
+
+        /*AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
         String[] countries = getResources().getStringArray(R.array.countries_array);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, countries);
         textView.setAdapter(adapter);
@@ -122,12 +134,56 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             }
-        });
+        });*/
 
-
+        Log.i(TAG, "onCreate");
 
 
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Log.i(TAG, "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Log.i(TAG, "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        Log.i(TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        Log.i(TAG, "onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Log.i(TAG, "onDestroy");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        Log.i(TAG, "onRestart");
+    }
+
+
 }
 
 

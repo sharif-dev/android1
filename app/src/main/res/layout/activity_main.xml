@@ -6,20 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button2"
-        tools:ignore="MissingConstraints" />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="580dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -38,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button3"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -66,7 +61,7 @@
         android:autofillHints="hello"
         android:imeOptions="actionSend"/>
 
-    <AutoCompleteTextView
+    <!--<AutoCompleteTextView
         android:id="@+id/autocomplete_country"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -135,7 +130,7 @@
         android:layout_marginRight="72dp"
         app:layout_constraintEnd_toStartOf="@+id/toggleButton1"
         tools:layout_editor_absoluteY="494dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints" />-->
 
 
 
